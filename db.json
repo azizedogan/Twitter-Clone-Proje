@@ -1,0 +1,96 @@
+{
+  "gundem": [
+    {
+      "id": 1,
+      "subject": "Evlilikte yaşa takılanlar"
+    },
+    {
+      "id": 2,
+      "subject": "Javascript Çalışanlar"
+    },
+    {
+      "id": 3,
+      "subject": "Syndore Büyüyor"
+    },
+    {
+      "id": 4,
+      "subject": "Azize Evet Diyecek mi ?"
+    },
+    {
+      "id": 5,
+      "subject": "Dünyanın En Yakışıklısı Kim ?"
+    },
+    {
+      "id": 6,
+      "subject": "Kainat Güzeli Kim ?"
+    },
+    {
+      "id": 7,
+      "subject": "Kurs "
+    },
+    {
+      "id": 8,
+      "subject": "Mr Robot"
+    },
+    {
+      "id": 9,
+      "subject": "Kasım"
+    },
+    {
+      "id": 10,
+      "subject": "Masterchef"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Mon",
+      "username": "monica1",
+      "img": "img/1.jpg",
+      "tweets": [
+        {
+          "id": 1,
+          "text": "ilk tweet",
+          "time": "10.11.2023 12:30"
+        },
+        {
+          "id": 2,
+          "text": "İkinci tweet",
+          "time": "11.11.2023  16:30"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Joey",
+      "username": "joeyfood",
+      "img": "img/2.jpg",
+      "tweets": [
+        {
+          "id": 1,
+          "text": "Hello",
+          "time": "11.11.2023 15:30"
+        },
+        {
+          "id": 2,
+          "text": "İkinci tweet",
+          "time": "11.11.2023  18:01"
+        },
+        {
+          "id": 3,
+          "text": "üçüncü tweet",
+          "time": "12.11.2023  08:35"
+        }
+      ]
+    },
+    {
+      "name": "Azize Doğan",
+      "username": "azizedgn",
+      "email": "azize@mail.com",
+      "phone": "1234567890",
+      "password": "1234567",
+      "tweets": [],
+      "id": 3
+    }
+  ]
+}

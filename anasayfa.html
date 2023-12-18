@@ -16,11 +16,11 @@
       <div class="col-3">
           <a href="anasayfa.html" class="brand"><i class="fa-brands fa-twitter"></i></a>
           <nav class="nav nav-pills flex-column flex-nowrap overflow-auto slider__nav">
-              <a href="#" class="nav-link"><i class="fa-solid fa-house me-2"></i>Anasayfa</a>
-              <a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass me-2"></i>Keşfet</a>
-              <a href="#" class="nav-link"><i class="fa-regular fa-bell me-2"></i>Bildirimler</a>
-              <a href="#" class="nav-link"><i class="fa-regular fa-envelope me-2"></i>Mesajlar</a>
-              <a href="#" class="nav-link"><i class="fa-regular fa-user me-2"></i>Profil</a>
+              <a href="anasayfa.html" class="nav-link"><i class="fa-solid fa-house me-2"></i>Anasayfa</a>
+              <a href="kesfet.html" class="nav-link"><i class="fa-solid fa-magnifying-glass me-2"></i>Keşfet</a>
+              <a href="bildirim.html" class="nav-link"><i class="fa-regular fa-bell me-2"></i>Bildirimler</a>
+              <a href="mesaj.html" class="nav-link"><i class="fa-regular fa-envelope me-2"></i>Mesajlar</a>
+              <a href="profile.html" class="nav-link"><i class="fa-regular fa-user me-2"></i>Profil</a>
               <a href="#" class="nav-link"><i class="fa-solid fa-ellipsis me-2"></i>Daha fazla</a>
           </nav>
           <button type="button" id="cardTweet" class="btn btn-primary">Paylaş</button>
@@ -29,8 +29,8 @@
       <div class="col-6">
         <div class="card">
           <div class="card-header">
-            <a href="#">Sana Özel</a>
-            <a href="#">Takip Edilenler</a>
+            <span>Sana Özel</span>
+            <span>Takip Edilenler</span>
           </div>
           <div class="card-body">
               <img src="img/profile.png" alt="">
@@ -43,40 +43,36 @@
                 <a href="#"><i class="fa-solid fa-face-smile"></i></a>
               </div>
               <div>
-                <button type="button" id="tweet" class="btn btn-primary">Paylaş</button>
+                <button type="button" id="shareTweet" class="btn btn-primary">Paylaş</button>
               </div>
           </div>
+        </div>
+
+        <div id="tweet_list">
+         
         </div>
       </div>
 
       <div class="col-3">
-        <form class="d-flex">
-          <input type="text" class="form-control me-1" placeholder="Ara">
-          <button name="search" type="button" class="btn btn-secondary">
-              <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
+        <input type="text" id="search" class="form-control" placeholder="Ara" oninput="getProfile()" onblur="temizle()">
+          
+        <div id="searchCard" class="search" >
+          
+        </div>
 
-        <div class="card-right">
-          <h4>Gündem</h4>
-            <a href="#">#1</a>
-            <a href="#">#2</a>
-            <a href="#">#3</a>
-            <a href="#">#4</a>
-            <a href="#">#5</a>
-            <a href="#">#6</a>
-            <a href="#">#6</a>
-            <a href="#">#7</a>
-            <a href="#">#8</a>
-            <a href="#">#9</a>
-            <a href="#">#10</a>
+        <div class="card-right gundem">
+          <h4 class="ms-3">Gündem</h4>
+            <ul id="gundem_list" class="list-group list-group-flush">
+
+            </ul>
         </div>
       </div>
-
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="tweetler.js"></script>
+    <script src="search.js"></script>
+    <script src="gundem.js"></script>
   </body>
 </html>
