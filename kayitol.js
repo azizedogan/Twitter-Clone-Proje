@@ -110,7 +110,7 @@ form.addEventListener('submit', function (e) {
         .then(data => {
             showAlert('Başarıyla kayıt oldunuz.' , 'success');
             
-            window.location.href = 'giris-yap.html'; 
+            window.location.href = 'girisyap.html'; 
         })
         .catch(error => {
             console.error('Error:', error);
